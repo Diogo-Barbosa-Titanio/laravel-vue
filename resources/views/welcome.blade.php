@@ -1,7 +1,10 @@
 @extends('layout')
 
-@section('titulo')
-    Laravel Vue
+@section('titulo','Laravel Vue')
+
+
+@section('cabecalho')
+    Cabeçalho Teste
 @endsection
 
 @section('conteudo')
@@ -20,4 +23,8 @@
 
     </div>
 
+@endsection
+
+@section('rodape')
+    Rodapé Teste
 @endsection

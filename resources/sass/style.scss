@@ -1,0 +1,14 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+@import "base/reset";
+@import "base/fonts";
+@import "base/base";
+
+@import "layout/header";
+@import "layout/menu";
+@import "layout/footer";
+@import "layout/desktop";
+
+@import "pages/home";

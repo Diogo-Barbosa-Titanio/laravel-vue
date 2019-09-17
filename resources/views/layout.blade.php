@@ -8,17 +8,28 @@
     <title>@yield('titulo')</title>
 
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <link href="{{ mix('/css/style.css') }}" rel="stylesheet">
 
 
 </head>
 <body>
 
+    @hasSection('cabecalho')
+        <header>
+            @yield('cabecalho')
+        </header>
+    @endif
+
+    <main>
         @yield('conteudo')
+    </main>
 
+    @hasSection('rodape')
+        <footer>
+            @yield('rodape')
+        </footer>
+    @endif
 
-<script src="{{ mix('/js/app.js') }}"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
 </body>
 </html>

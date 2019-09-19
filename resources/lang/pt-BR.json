@@ -4,5 +4,8 @@
     "E-Mail Address": "Endereço de Email",
     "Password": "Senha",
     "Remember Me": "Lembre de Mim",
-    "Confirm Password": "Confirmar Senha"
+    "Confirm Password": "Confirmar Senha",
+    "Name": "Nome",
+    "You are logged in!": "Você está logado!",
+    "Logout": "Sair"
 }

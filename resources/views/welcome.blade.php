@@ -28,3 +28,11 @@
 @section('rodape')
     Rodapé Teste
 @endsection
+
+@section('scripts')
+    <script>
+        $(document).ready(function(){
+            console.log('JQuery funcionando!');
+        });
+    </script>
+@endsection

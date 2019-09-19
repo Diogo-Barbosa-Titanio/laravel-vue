@@ -31,5 +31,10 @@
     @endif
 
     <script src="{{ mix('/js/app.js') }}"></script>
+
+    @hasSection('rodape')
+        @yield('scripts')
+    @endif
+
 </body>
 </html>

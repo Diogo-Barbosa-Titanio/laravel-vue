@@ -10,6 +10,9 @@
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('/css/style.css') }}" rel="stylesheet">
 
+    @hasSection('styles')
+        @yield('styles')
+    @endif
 
 </head>
 <body>
@@ -32,7 +35,7 @@
 
     <script src="{{ mix('/js/app.js') }}"></script>
 
-    @hasSection('rodape')
+    @hasSection('scripts')
         @yield('scripts')
     @endif
 

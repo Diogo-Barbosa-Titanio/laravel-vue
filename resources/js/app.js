@@ -20,6 +20,8 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('criando-exibindo-dados', require('./components/CriandoExibindoDados.vue').default);
+Vue.component('manipulando-dados', require('./components/ManipulandoDados.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,4 +31,12 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+});
+
+const app1 = new Vue({
+    el: '#app-1',
+});
+
+const app2 = new Vue({
+    el: '#app-2',
 });

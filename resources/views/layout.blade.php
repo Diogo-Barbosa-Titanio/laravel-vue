@@ -17,27 +17,27 @@
 </head>
 <body>
 
-    @hasSection('cabecalho')
-        <header>
-            @yield('cabecalho')
-        </header>
-    @endif
+   @hasSection('cabecalho')
+   <header>
+      @yield('cabecalho')
+   </header>
+   @endif
 
-    <main>
-        @yield('conteudo')
-    </main>
+   <main>
+      @yield('conteudo')
+   </main>
 
-    @hasSection('rodape')
-        <footer>
-            @yield('rodape')
-        </footer>
-    @endif
+   @hasSection('rodape')
+   <footer>
+      @yield('rodape')
+   </footer>
+   @endif
 
-    <script src="{{ mix('/js/app.js') }}"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
 
-    @hasSection('scripts')
-        @yield('scripts')
-    @endif
+@hasSection('scripts')
+    @yield('scripts')
+@endif
 
 </body>
 </html>

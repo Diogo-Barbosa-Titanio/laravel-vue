@@ -31,6 +31,14 @@
 
                         </div>
 
+                        <div class="mt-2 mb-2">
+
+                            <label>Input a observar</label>
+                            <input v-model="busca" type="text">
+                            <p v-text="resultado"></p>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -44,12 +52,27 @@
         data() {
             return {
                 total: 10,
-                nome: 'jose antonio'
+                nome: 'jose antonio',
+                resultado: '',
+                busca: ''
+            }
+        },
+        watch: {
+            busca: function(novoValor, valorAntigo) {
+                this.resultado = 'Aguardando o término da digitação...'
+                this.recolheReposta()
             }
         },
         methods: {
             calcula(sinal) {
                 this.total = (sinal == '-') ? this.total - 1 : this.total + 1
+            },
+            recolheReposta() {
+                let valor = this.busca
+                setTimeout( () => {
+                    if(valor == this.busca)
+                        this.resultado = 'Terminou de digitar...'
+                }, 500)
             }
         },
         filters: {

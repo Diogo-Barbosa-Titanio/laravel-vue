@@ -46,6 +46,16 @@
 
         </div>
 
+        <div class="row">
+
+            <div class="col-12">
+                <div id="app-3">
+                    <componentes-juntos></componentes-juntos>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 @endsection
